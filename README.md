@@ -6,7 +6,7 @@ The project helps to order construction equipment rental. It shows the offer of 
 
 ## Demo
 
-[Documentation](https://wypozyczalnia.wrobud.usermd.net)
+[Strona testowa / Test page](https://wypozyczalnia.wrobud.usermd.net)
 
 
 ## Tech Stack
