@@ -1,38 +1,121 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* Global Styles */
+:root {
+  --main-color: #b61919;
+  --dark-color: #333333;
+  --light-color: #f4f4f4;
+  --danger-color: #dc3545;
+  --success-color: #28a745;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  background-color: #F5F1ED;
+  color: #333;
+}
+
+.shadow{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+h2{
+  font-size: 1.4rem !important;
+  letter-spacing: 1px;
+}
+h3{
+  font-size: 1.2rem !important;
+  letter-spacing: 1px;
+}
+
+ul{
+  list-style: none;
+  padding-left: 0 !important;
+}
+
+.main-btn{
+  display: block;
+  max-width: 200px;
+  padding: 0 1rem;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  font-family: sans-serif;
+  text-decoration: none;
+  background-color: white;
+  color: var(--dark-color);
+  border: 2px solid var(--dark-color);
+  letter-spacing: 2px;
   text-align: center;
+  position: relative;
+  transition: all .35s;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-btn span{
+  position: relative;
+  z-index: 2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-btn:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--main-color);
+  transition: all .35s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-btn:hover{
+  color: #fff;
+}
+
+.main-btn:hover:after{
+  width: 100%;
+}
+
+.flex-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.hover-button {
+  color: var(--main-color);
+  font-weight: 600;
+  text-decoration: none;
+  font-family: 'Roboto', helvetica;
+  background-color: var(--light-color);
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  letter-spacing: 2px;
+  box-shadow: 12px 14px 12px 0px rgba(0,0,0,0.30);
+  transition: box-shadow 150ms linear, background-color 150ms linear, transform 150ms linear;
   }
-  to {
-    transform: rotate(360deg);
+  .hover-button:hover {
+    text-decoration: none;
+    color: var(--main-color);
+    transform: scale(.98);
+    background-color: darken(var(--main-color), 10%);
+    box-shadow: 6px 8px 8px 4px rgba(0,0,0,0.30);
   }
-}
+  .hover-button:active {
+  
+    transform: scale(.97);
+    background-color: darken(var(--main-color), 15%);
+    box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.30);
+  }
