@@ -8,6 +8,10 @@ The project helps to order construction equipment rental. It shows the offer of 
 
 [Strona testowa / Test page](https://wypozyczalnia.wrobud.usermd.net)
 
+## Appendix
+
+[Backend repo](https://github.com/mtrx84/rentalBackand.git)
+
 
 ## Tech Stack
 
@@ -15,4 +19,12 @@ The project helps to order construction equipment rental. It shows the offer of 
 
 **Server:** Node, Express, MongoDb, Mongoose, Nodemailer
 
-CDN... :)
+
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env.local file
+
+`PORT`
+
+`REACT_APP_API_HOST`
+
